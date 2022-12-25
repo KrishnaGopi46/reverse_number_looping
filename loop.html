@@ -10,28 +10,42 @@
     
     <script>
       
-	<!-- //print 200 to 150 reverse number -->
+	//print 200 to 150 reverse number
 	
-	<!-- for(i=200;i>=150;i--){ -->
-		<!-- document.write(i + " "); -->
-	<!-- } -->
-	
-	<!-- document.write("<br>"); -->
-	
-	<!-- //print 100 to 0 revere even number -->
-	
-	<!-- for(i=100;i>=0;i=i-2){ -->
-		<!-- document.write(i + " "); -->
-	<!-- } -->
-
-	<!-- document.write("<br>"); -->
-	
-	let i=150;
-	while (i>=125){
+	for(i=200;i>=150;i--){
 		document.write(i + " ");
-		i--;
+	}
+	
+	document.write("<br>");
+	
+	//print 100 to 0 revere even number
+	
+	for(i=100;i>=0;i=i-2){
+		document.write(i + " ");
 	}
 
+	document.write("<br>");
+	
+	//print 150 to 125 reverese number using while loop
+	
+	<!-- let i=150; -->
+	<!-- while (i>=125){ -->
+		<!-- document.write(i + " "); -->
+		<!-- i--; -->
+	<!-- } -->
+	
+	
+	
+	//input 456 output 654
+	
+	var a=456;
+	let sum=0;
+	while(a>0){
+		var reminder=a%10;
+		sum=(sum*10)+reminder;
+		a=(a-reminder)/10;
+	}
+	console.log(sum);
 	  
     </script>
     
